@@ -6,6 +6,8 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
+#include <string>
+
 class Vehicle {
   private:
     std::string manufacturer;
@@ -21,3 +23,4 @@ class Vehicle {
 
 
 #endif
+

@@ -2,9 +2,10 @@
 // CIS 1202 501
 // November 22, 2023
 
-
 #ifndef TRUCK_H
 #define TRUCK_H
+
+#include "Vehicle.h"
 
 class Truck : public Vehicle {
   private:
@@ -14,7 +15,6 @@ class Truck : public Vehicle {
     int getTowCapacity();
     void setTowCapacity(int towCapacity_);
     void displayInfo();
-
 };
 
 

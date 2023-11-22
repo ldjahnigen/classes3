@@ -2,13 +2,11 @@
 // CIS 1202 501
 // November 22, 2023
 
+#include <iostream>
 #include "Car.h"
-#include "Vehicle.h"
-#include "Vehicle.cpp"
 
-Car::Car(std::string manufacturer_, int year_, int doors_) {
-  manufacturer = manufacturer_;
-  year = year_;
+Car::Car(std::string manufacturer_, int year_, int doors_)
+: Vehicle(manufacturer_, year_), doors(doors_) {
   doors = doors_;
 }
 

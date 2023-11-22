@@ -2,11 +2,10 @@
 // CIS 1202 501
 // November 22, 2023
 
-#include "Vehicle.h"
-#include "Vehicle.cpp"
-
 #ifndef CAR_H
 #define CAR_H
+
+#include "Vehicle.h"
 
 class Car : public Vehicle {
   private:

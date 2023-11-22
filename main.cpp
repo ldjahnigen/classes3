@@ -17,14 +17,36 @@ int main() {
   int doors;
   int towCapacity;
 
-  manufacturer = "Ford";
-  year = 1;
-  doors = 10;
-  towCapacity = 2000;
+  std::cout << "Vehicle\n";
+  std::cout << "Enter the manufacturer: ";
+  std::getline(std::cin, manufacturer);
+  std::cout << "Enter the year: ";
+  std::cin >> year;
+
   Vehicle v = Vehicle(manufacturer, year);
   v.displayInfo();
+
+  std::cout << "\nCar\n";
+  std::cout << "Enter the manufacturer: ";
+  std::cin.ignore();
+  std::getline(std::cin, manufacturer);
+  std::cout << "Enter the year: ";
+  std::cin >> year;
+  std::cout << "Enter the number of doors: ";
+  std::cin >> doors;
+
   Car c = Car(manufacturer, year, doors);
   c.displayInfo();
+
+  std::cout << "\nTruck\n";
+  std::cout << "Enter the manufacturer: ";
+  std::cin.ignore();
+  std::getline(std::cin, manufacturer);
+  std::cout << "Enter the year: ";
+  std::cin >> year;
+  std::cout << "Enter the tow capacity: ";
+  std::cin >> towCapacity;
+
   Truck t = Truck(manufacturer, year, towCapacity);
   t.displayInfo();
 

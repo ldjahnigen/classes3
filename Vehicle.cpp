@@ -27,7 +27,8 @@ void Vehicle::setYear(int year_) {
 }
 
 void Vehicle::displayInfo() {
-    std::cout << "Manufacturer: " << manufacturer << '\n'
+    std::cout << "Vehicle information\n" 
+              << "Manufacturer: " << manufacturer << '\n'
               << "Year: " << year << '\n';
 }
 

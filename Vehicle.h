@@ -11,11 +11,11 @@ class Vehicle {
     std::string manufacturer;
     int year;
   public:
-    Vehicle(std::string, int);
+    Vehicle(std::string manufacturer_, int year_);
     std::string getManufacturer();
-    void setManufacturer(std::string);
+    void setManufacturer(std::string manufacturer_);
     int getYear();
-    void setYear(int);
+    void setYear(int year_);
     void displayInfo();
 };
 

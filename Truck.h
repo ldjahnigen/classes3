@@ -10,9 +10,9 @@ class Truck : public Vehicle {
   private:
     int towCapacity;
   public:
-    Truck(std::string, int, int);
+    Truck(std::string manufacturer_, int year_, int towCapacity_);
     int getTowCapacity();
-    void setTowCapacity(int);
+    void setTowCapacity(int towCapacity_);
     void displayInfo();
 
 };

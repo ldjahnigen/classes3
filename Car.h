@@ -12,9 +12,9 @@ class Car : public Vehicle {
   private:
     int doors;
   public:
-    Car(std::string, int, int);
+    Car(std::string manufacturer_, int year_, int doors_);
     int getDoors();
-    void setDoors(int);
+    void setDoors(int doors_);
     void displayInfo();
 };
 
